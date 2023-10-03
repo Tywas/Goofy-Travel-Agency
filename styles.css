@@ -5,20 +5,29 @@ h1 {
   color: blue;
 }
 p {
-  color: black;
+  color: #efefef;
+}
+
+.elephant {
+  background-size: cover;
+  background-position: center;
+
+  display: block;
+  margin: auto;
+  background-color: hsl(0, 0%, 90%);
+  transition: background-color 300ms;
 }
 
 /* Footer Styles */
 footer {
-   background-color: #EFC88B;
+   background-color: #CF5C36;
    color: #7C7C7C;
    padding: 20px 0;
+   width: 100%;
 }
 
 .footer-content {
-   margin-top: 150px;
-   width: 100%;
-   padding: 100px 15%;
+   padding: 100px 20%;
    background: #CF5C36;
    color: #efefef;
    display: flex;
@@ -29,9 +38,11 @@ footer {
 }
 
 .footer-content div h2{
-   font-weight: 300;
+   font-weight: 500;
    margin-bottom: 30px;
-   letter-spacing: 1px;
+   text-align: center;
+   color: #1f49a4;
+   /* letter-spacing: 1px; */
 }
 
 /* Footer Copyright Tag */
@@ -55,6 +66,7 @@ footer {
     line-height: 20px;
     color: #fbf4ea;
     letter-spacing: .4px;
+    
 }
 
 /* remove bullet from lists */
@@ -64,6 +76,6 @@ ul {
 
 /* Footer links:hover */
 .footer-section-col-2 a:hover{
-    color: #00FF00;
+    color: #d79a31;
     text-decoration: underline;
 }

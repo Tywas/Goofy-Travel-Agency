@@ -1,32 +1,30 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Adventure Agency</title>
+    <title>Travel Packages</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-<img class="elephant" src="https://shorturl.at/hIKOU">
-</img>
     <header>
-        <h1>Welcome to Goofy Travel Agency</h1>
+        <h1>Travel Packages</h1>
         <nav>
             <ul>
+                <li><a href="index.php">Home</a></li>
                 <li><a href="about.php">About</a></li>
-                <!-- <li><a href="itineraries.php">Itineraries</a></li> -->
-                <!-- <li><a href="worldmap.php">World Map</a></li> -->
-                <li><a href="packages.php">Packages</a></li>
-                <!-- <li><a href="information.php">Information</a></li> -->
+                <!-- <li><a href="packages.php">Packages</a></li> -->
                 <li><a href="contact.php">Contact</a></li>
                 <li><a href="user.php">User</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home">
-        <!-- Add introductory content here -->
+    <section id="packages">
+    <h2>Our Itineraries</h2>
+    <p>Explore our diverse range of travel itineraries designed to cater to all types of adventurers. From cultural excursions to thrilling outdoor adventures, we have something for everyone.</p>
+    <p>Click on the itineraries to learn more about each trip's highlights, duration, and pricing. Start planning your next adventure with us today!</p>
+        <!-- Add content for the packages page here -->
     </section>
 
     <footer>
@@ -46,7 +44,7 @@
 	   <div class="footer-section-col-2">
                <h2>Quick Links</h2>
                <ul>
-                   <li><a href="index.php">Home</a></li>
+               <li><a href="index.php">Home</a></li>
                    <li><a href="about.php">About</a></li>
 		   <!-- <li><a href="worldmap.php">World Map</a></li> -->
                    <li><a href="packages.php">Packages</a></li>

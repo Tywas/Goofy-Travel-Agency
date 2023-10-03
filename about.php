@@ -1,32 +1,27 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Adventure Agency</title>
+    <title>About Us</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
-<body>
-<img class="elephant" src="https://shorturl.at/hIKOU">
-</img>
+<body>  
     <header>
-        <h1>Welcome to Goofy Travel Agency</h1>
+        <h1>About Us</h1>
         <nav>
             <ul>
-                <li><a href="about.php">About</a></li>
-                <!-- <li><a href="itineraries.php">Itineraries</a></li> -->
-                <!-- <li><a href="worldmap.php">World Map</a></li> -->
-                <li><a href="packages.php">Packages</a></li>
-                <!-- <li><a href="information.php">Information</a></li> -->
-                <li><a href="contact.php">Contact</a></li>
-                <li><a href="user.php">User</a></li>
+              <li><a href="index.php">Home</a></li>  
+              <!-- <li><a href="about.php">About</a></li> -->
+              <li><a href="packages.php">Packages</a></li>
+              <li><a href="contact.php">Contact</a></li>
+              <li><a href="user.php">User</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home">
-        <!-- Add introductory content here -->
+    <section id="about">
+        <!-- Add content for the about page here -->
     </section>
 
     <footer>
@@ -46,9 +41,9 @@
 	   <div class="footer-section-col-2">
                <h2>Quick Links</h2>
                <ul>
-                   <li><a href="index.php">Home</a></li>
+                  <li><a href="index.php">Home</a></li>
                    <li><a href="about.php">About</a></li>
-		   <!-- <li><a href="worldmap.php">World Map</a></li> -->
+		               <!-- <li><a href="worldmap.php">World Map</a></li> -->
                    <li><a href="packages.php">Packages</a></li>
                    <!-- <li><a href="information.php">Information</a></li> -->
                    <!-- <li><a href="itineraries.php">Itineraries</a></li> -->
