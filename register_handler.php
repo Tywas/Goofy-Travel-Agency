@@ -115,9 +115,10 @@ if($flag == 0){
         if (empty($results)) {
             echo "<div>" . "<p>there are no resutls</p>" . "</div>";
         } else {
-            echo "inside for loop";
+            echo "inside for loop\n";
+            var_dump($results);
             foreach ($resutls as $row) {
-                echo "inside foreachloop";
+                echo "inside foreachloop\n";
                 echo htmlspecialchars($row['user_id']) . "\n";
                 echo htmlspecialchars($row['Fname']) . "\n";
                 echo htmlspecialchars($row['Lname']) . "\n";
@@ -126,6 +127,16 @@ if($flag == 0){
                 echo htmlspecialchars($row['password']) . "\n";
             }
         }
+        echo "\n\n username password selcet only";
+        $results = $conn->query("SELECT username, password FROM users")->fetchAll(PDO::FETCH_ASSOC);
+        foreach ($resutls as $user) {
+            echo "inside foreach loop\n";
+            echo htmlspecialchars($user['username']) . "\n";
+            echo htmlspecialchars($user['password']) . "\n";
+        }
+
+
+
         $conn = null;
         $stmt = null;
         
