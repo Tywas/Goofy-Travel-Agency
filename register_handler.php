@@ -94,19 +94,19 @@ echo "hello";
 // $dao->getConnection();
 
 
-// $hostname = "n4m3x5ti89xl6czh.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
-// $database = "tjtep33stx0e3vfb";
-// $username = "k2lbgig48opk9klc";
-// $password = "ler3hqx86vf6xan6";
+$hostname = "n4m3x5ti89xl6czh.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+$database = "tjtep33stx0e3vfb";
+$username = "k2lbgig48opk9klc";
+$password = "ler3hqx86vf6xan6";
 
 
-$url = getenv('JAWSDB_URL');
-$dbparts = parse_url($url);
+// $url = getenv('JAWSDB_URL');
+// $dbparts = parse_url($url);
 
-$hostname = $dbparts['host'];
-$username = $dbparts['user'];
-$password = $dbparts['pass'];
-$database = ltrim($dbparts['path'],'/');
+// $hostname = $dbparts['host'];
+// $username = $dbparts['user'];
+// $password = $dbparts['pass'];
+// $database = ltrim($dbparts['path'],'/');
 
 try {
     $conn = new PDO("mysql:host=$hostname;dbname=$database", $username, $password);
