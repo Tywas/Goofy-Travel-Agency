@@ -105,30 +105,8 @@ if($flag == 0){
         $stmt->bindParam(":email", $email);
         $stmt->bindParam(":pwd", $password);
         $stmt->execute();
-        
-
-        // $query2 = "SELECT * FROM users;";
-        // $stmt2 = $conn->prepare($query2);
-        // $stmt2->execute();
-        $results = $conn->query("SELECT * FROM users")->fetchAll(PDO::FETCH_ASSOC);
-
-        if (empty($results)) {
-            echo "<div>" . "<p>there are no resutls</p>" . "</div>";
-        } else {
-            foreach ($resutls as $row) {
-                echo htmlspecialchars($row['user_id']) . "\n";
-                echo htmlspecialchars($row['Fname']) . "\n";
-                echo htmlspecialchars($row['Lname']) . "\n";
-                echo htmlspecialchars($row['username']) . "\n";
-                echo htmlspecialchars($row['email']) . "\n";
-                echo htmlspecialchars($row['password']) . "\n";
-            }
-        }
         $conn = null;
         $stmt = null;
-        
-        // header("Location: login.php");
-        // exit();
     }
     catch(PDOException $e) {
         echo "Connection failed: " . $e->getMessage();
@@ -136,9 +114,10 @@ if($flag == 0){
     }
         // header("Location: login.php");
         // exit();
-    }
+}
 elseif($flag == 1){ # error in validation
     $_SESSION['messages'] = $validation_errors;
+    
     // temp print to see errors
     echo "no need to go into database";
     if(isset($_SESSION['messages'])){
@@ -148,9 +127,42 @@ elseif($flag == 1){ # error in validation
         };
         unset($_SESSION['messages']);
     }
+    
     // header("Location: register.php");
     // exit();
 }
 
+
+// temporary
+try {
+    $conn = new PDO("mysql:host=$hostname;dbname=$database", $dbusername, $dbpassword);
+    // set the PDO error mode to exception
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "Connected successfully";
+    // $query2 = "SELECT * FROM users;";
+    // $stmt2 = $conn->prepare($query2);
+    // $stmt2->execute();
+    $results = $conn->query("SELECT * FROM users")->fetchAll(PDO::FETCH_ASSOC);
+
+    if (empty($results)) {
+        echo "<div>" . "<p>there are no resutls</p>" . "</div>";
+    } else {
+        foreach ($resutls as $row) {
+            echo htmlspecialchars($row['user_id']) . "\n";
+            echo htmlspecialchars($row['Fname']) . "\n";
+            echo htmlspecialchars($row['Lname']) . "\n";
+            echo htmlspecialchars($row['username']) . "\n";
+            echo htmlspecialchars($row['email']) . "\n";
+            echo htmlspecialchars($row['password']) . "\n";
+        }
+    }
+    $conn = null;
+    catch(PDOException $e) {
+        echo "Connection failed: " . $e->getMessage();
+        // die("Connection failed: " . $e->getMessage());
+    }    
+    // header("Location: login.php");
+    // exit();
+}
 // would only need to connect to database if flag is 0
 echo "hello";
