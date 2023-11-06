@@ -1,0 +1,40 @@
+body {
+    background-color: powderblue;
+}
+
+.itineraries{
+    display: inline-block;
+    /* padding: 20px 10px; */
+    /* margin: 10px 20px;  */
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 100px;
+    /* width: 20%; set as a min/max at certain page sizes */
+    width: 25%;
+    height: 25%;
+    background-color: darkcyan;
+    /* outline: 2px solid black; */
+}
+
+.itinerary_img {
+    height: 100%;
+    width: 100%;
+    /* outline: 2px solid black; */
+    margin-top: 10px;
+}
+
+.itinerary_title{
+    color: black;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
+
+.itineraries:hover {
+    background-color: lightcoral;
+}
+
+body a{
+    text-decoration: none;
+}

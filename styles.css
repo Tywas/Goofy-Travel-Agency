@@ -1,24 +1,59 @@
 body {
   background-color: powderblue;
 }
-h1 {
+
+/* header {
+
+} */
+
+
+
+/* h1 {
   color: blue;
-}
+} */
 p {
-  color: black;
+  color: #efefef;
 }
+
+/* .hero {
+  width: 100vw;
+  height: 40vh;
+  background-image: url("https://shorturl.at/hIKOU");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+
+/* header.a.img.web-logo {
+  width: 20%;
+  height: 20%;
+} */
+
+/* .elephant { */
+  /* background-size: cover;
+  background-position: center; */
+/* width: 100vw;
+height: auto;
+  display: block;
+  margin: auto;
+  background-color: hsl(0, 0%, 90%);
+  transition: background-color 300ms;
+} */
 
 /* Footer Styles */
 footer {
-   background-color: #EFC88B;
+   background-color: #CF5C36;
    color: #7C7C7C;
    padding: 20px 0;
+   width: 100%;
 }
 
+/* #footer-logo {
+  display: inline-flex;
+} */
+
 .footer-content {
-   margin-top: 150px;
-   width: 100%;
-   padding: 100px 15%;
+   padding: 100px 20%;
    background: #CF5C36;
    color: #efefef;
    display: flex;
@@ -29,9 +64,11 @@ footer {
 }
 
 .footer-content div h2{
-   font-weight: 300;
+   font-weight: 500;
    margin-bottom: 30px;
-   letter-spacing: 1px;
+   text-align: center;
+   color: #1f49a4;
+   /* letter-spacing: 1px; */
 }
 
 /* Footer Copyright Tag */
@@ -55,6 +92,7 @@ footer {
     line-height: 20px;
     color: #fbf4ea;
     letter-spacing: .4px;
+    
 }
 
 /* remove bullet from lists */
@@ -64,6 +102,6 @@ ul {
 
 /* Footer links:hover */
 .footer-section-col-2 a:hover{
-    color: #00FF00;
+    color: #d79a31;
     text-decoration: underline;
 }
