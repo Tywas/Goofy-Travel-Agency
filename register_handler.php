@@ -104,30 +104,24 @@ if($flag == 0){
         $stmt->bindParam(":username", $username);
         $stmt->bindParam(":email", $email);
         $stmt->bindParam(":pwd", $password);
-
         $stmt->execute();
         
-        $query = "SELECT * FROM users;";
-        $stmt = $conn->prepare($query);
-        $stmt->execute();
 
-        $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
-        // print resutlts
-        // foreach($results as $result){
-        //     print_r($results[$result], 1);
-        //     echo $results[$result] . "\n";
-        // }
-        
+        // $query2 = "SELECT * FROM users;";
+        // $stmt2 = $conn->prepare($query2);
+        // $stmt2->execute();
+        $results = $conn->query("SELECT * FROM users")->fetchAll(PDO::FETCH_ASSOC);
+
         if (empty($results)) {
             echo "<div>" . "<p>there are no resutls</p>" . "</div>";
         } else {
             foreach ($resutls as $row) {
-                echo htmlspecialchars($row['user_id']);
-                echo htmlspecialchars($row['Fname']);
-                echo htmlspecialchars($row['Lname']);
-                echo htmlspecialchars($row['username']);
-                echo htmlspecialchars($row['email']);
-                echo htmlspecialchars($row['password']);
+                echo htmlspecialchars($row['user_id']) . "\n";
+                echo htmlspecialchars($row['Fname']) . "\n";
+                echo htmlspecialchars($row['Lname']) . "\n";
+                echo htmlspecialchars($row['username']) . "\n";
+                echo htmlspecialchars($row['email']) . "\n";
+                echo htmlspecialchars($row['password']) . "\n";
             }
         }
         $conn = null;
