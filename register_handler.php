@@ -108,7 +108,7 @@ if($flag == 0){
         $stmt->execute();
         
         $query = "SELECT * FROM users;";
-        $stmt = $pdo->prepare($query);
+        $stmt = $conn->prepare($query);
         $stmt->execute();
 
         $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
