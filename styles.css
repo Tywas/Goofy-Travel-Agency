@@ -43,10 +43,8 @@ height: auto;
 /* Footer Styles */
 footer {
    background-color: #CF5C36;
-   background-color: #CF5C36;
    color: #7C7C7C;
    padding: 20px 0;
-   width: 100%;
    width: 100%;
 }
 
@@ -55,7 +53,6 @@ footer {
 } */
 
 .footer-content {
-   padding: 100px 20%;
    padding: 100px 20%;
    background: #CF5C36;
    color: #efefef;
@@ -68,11 +65,7 @@ footer {
 
 .footer-content div h2{
    font-weight: 500;
-   font-weight: 500;
    margin-bottom: 30px;
-   text-align: center;
-   color: #1f49a4;
-   /* letter-spacing: 1px; */
    text-align: center;
    color: #1f49a4;
    /* letter-spacing: 1px; */

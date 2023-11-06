@@ -4,15 +4,20 @@
     <p>Your travel journey starts here. Explore your options and embark on exciting adventures with Travel Adventure Agency.</p>
 </section> -->
 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Dashboard</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="temp4_head_style.css">
     <link rel="icon" type="image/x-icon" href="favicon-32x32.ico">
 </head>
 <body>  
+    <header>
+        <? include "site_header.php" ?>
+    </header> 
     <header>
         <h1>User Dashboard</h1>
         <nav>
@@ -21,6 +26,7 @@
                 <li><a href="about.php">About</a></li>
                 <li><a href="packages.php">Packages</a></li>
                 <li><a href="contact.php">Contact</a></li>
+                <li><a href="login.php">Login</a></li>
             </ul>
         </nav>
     </header>

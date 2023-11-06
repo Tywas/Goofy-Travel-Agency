@@ -1,23 +1,17 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="site_header_styles.css">
+
     <link rel="icon" type="image/x-icon" href="favicon-32x32.ico">
 </head>
 <body>  
     <header>
-        <h1>About Us</h1>
-        <nav>
-            <ul>
-              <li><a href="index.php">Home</a></li>  
-              <!-- <li><a href="about.php">About</a></li> -->
-              <li><a href="packages.php">Packages</a></li>
-              <li><a href="contact.php">Contact</a></li>
-              <li><a href="user.php">User</a></li>
-            </ul>
-        </nav>
+        <? include "site_header.php" ?>
     </header>
 
     <section id="about">

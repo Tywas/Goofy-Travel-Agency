@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="site_header_styles.css">
     <link rel="icon" type="image/x-icon" href="favicon-32x32.ico">
 <body>
-    <!-- <div class="hero"></div> -->
-<!-- <img class="elephant" src="https://shorturl.at/hIKOU"> </img> -->
+
 
     <header>
         <? include "site_header.php" ?>
