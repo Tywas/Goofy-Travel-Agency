@@ -97,34 +97,34 @@ $url = getenv('JAWSDB_URL');
 $dbparts = parse_url($url);
 
 $hostname = $dbparts['host'];
-$username = $dbparts['user'];
-$password = $dbparts['pass'];
+$dbusername = $dbparts['user'];
+$dbpassword = $dbparts['pass'];
 $database = ltrim($dbparts['path'],'/');
 
 try {
-    $conn = new PDO("mysql:host=$hostname;dbname=$database", $username, $password);
+    $conn = new PDO("mysql:host=$hostname;dbname=$database", $dbusername, $dbpassword);
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     echo "Connected successfully";
     
-    // $query = "INSERT INTO users (Fname, Lname, username, email, pwd)
-    // VALUES (:Fname, :Lname, :username, :email, :pwd);";
+    $query = "INSERT INTO users (Fname, Lname, username, email, pwd)
+    VALUES (:Fname, :Lname, :username, :email, :pwd);";
     
-    // $stmt = $pdo->prepare($query);
+    $stmt = $pdo->prepare($query);
     
-    // $stmt->bindParam(":Fname", $fname)
-    // $stmt->bindParam(":Lname", $lname)
-    // $stmt->bindParam(":username", $username)
-    // $stmt->bindParam(":email", $email)
-    // $stmt->bindParam(":pwd", $password)
+    $stmt->bindParam(":Fname", $fname)
+    $stmt->bindParam(":Lname", $lname)
+    $stmt->bindParam(":username", $username)
+    $stmt->bindParam(":email", $email)
+    $stmt->bindParam(":pwd", $password)
 
-    // $stmt->execute()
+    $stmt->execute()
     
-    // $conn = null;
-    // $stmt = null;
+    $conn = null;
+    $stmt = null;
     
-    // header("Location: login.php");
-    // exit();
+    header("Location: login.php");
+    exit();
 }
 catch(PDOException $e) {
     echo "Connection failed: " . $e->getMessage();
