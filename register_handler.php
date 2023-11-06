@@ -97,7 +97,7 @@ if($flag == 0){
         $query = "INSERT INTO users (Fname, Lname, username, email, pwd)
         VALUES (:Fname, :Lname, :username, :email, :pwd);";
         
-        $stmt = $pdo->prepare($query);
+        $stmt = $conn->prepare($query);
         
         $stmt->bindParam(":Fname", $fname);
         $stmt->bindParam(":Lname", $lname);
