@@ -113,11 +113,23 @@ if($flag == 0){
 
         $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
         // print resutlts
-        foreach($results as $result){
-            print_r($results[$result], 1);
-            echo $results[$result] . "\n";
+        // foreach($results as $result){
+        //     print_r($results[$result], 1);
+        //     echo $results[$result] . "\n";
+        // }
+        
+        if (empty($results)) {
+            echo "<div>" . "<p>there are no resutls</p>" . "</div>";
+        } else {
+            foreach ($resutls as $row) {
+                echo htmlspecialchars($row['user_id']);
+                echo htmlspecialchars($row['Fname']);
+                echo htmlspecialchars($row['Lname']);
+                echo htmlspecialchars($row['username']);
+                echo htmlspecialchars($row['email']);
+                echo htmlspecialchars($row['password']);
+            }
         }
-
         $conn = null;
         $stmt = null;
         
@@ -133,17 +145,18 @@ if($flag == 0){
     }
 elseif($flag == 1){ # error in validation
     $_SESSION['messages'] = $validation_errors;
-    header("Location: register.php");
-    exit();
+    // temp print to see errors
+    echo "no need to go into database";
+    if(isset($_SESSION['messages'])){
+        foreach($_SESSION['messages'] as $col_name => $string) {
+            echo "<p class='registration_error_message'>" . $_SESSION['messages'][$col_name] . "</p>";
+            unset($_SESSION['messages'][$col_name]);
+        };
+        unset($_SESSION['messages']);
+    }
+    // header("Location: register.php");
+    // exit();
 }
 
 // would only need to connect to database if flag is 0
 echo "hello";
-
-
-
-
-
-// foreach($_SESSION['messages'] as $col_name => $string) {
-//     echo $_SESSION['messages'][$col_name] . "   .   ";
-// }

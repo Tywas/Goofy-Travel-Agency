@@ -48,6 +48,8 @@ nav {
     border-radius: 3px;
     color: white;
     text-decoration: none;
+    pointer-events: none;
+    cursor: default;
 }
 
 .header-links ul li a:hover{
