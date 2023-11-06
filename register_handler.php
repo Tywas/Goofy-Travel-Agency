@@ -112,13 +112,13 @@ try {
     
     $stmt = $pdo->prepare($query);
     
-    $stmt->bindParam(":Fname", $fname)
-    $stmt->bindParam(":Lname", $lname)
-    $stmt->bindParam(":username", $username)
-    $stmt->bindParam(":email", $email)
-    $stmt->bindParam(":pwd", $password)
+    $stmt->bindParam(":Fname", $fname);
+    $stmt->bindParam(":Lname", $lname);
+    $stmt->bindParam(":username", $username);
+    $stmt->bindParam(":email", $email);
+    $stmt->bindParam(":pwd", $password);
 
-    $stmt->execute()
+    $stmt->execute();
     
     $conn = null;
     $stmt = null;
