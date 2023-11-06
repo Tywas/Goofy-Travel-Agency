@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Dashboard</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="temp4_head_style.css">
+    <link rel="stylesheet" href="site_header_styles.css">
     <link rel="icon" type="image/x-icon" href="favicon-32x32.ico">
 </head>
 <body>  

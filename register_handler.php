@@ -79,8 +79,8 @@ if(!preg_match("/^[a-z ,.'-]+$/i", $lname)) {
 }
 
 if($flag == 0){
-    header("Location: login.php");
-    exit();
+    // header("Location: login.php");
+    // exit();
 }
 elseif($flag == 1){ # error in validation
     $_SESSION['messages'] = $validation_errors;
@@ -100,7 +100,7 @@ echo "hello";
 // $password = "ler3hqx86vf6xan6";
 
 
-$url = getenv('mysql://k2lbgig48opk9klc:ler3hqx86vf6xan6@n4m3x5ti89xl6czh.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/tjtep33stx0e3vfb');
+$url = getenv('JAWSDB_URL');
 $dbparts = parse_url($url);
 
 $hostname = $dbparts['host'];
