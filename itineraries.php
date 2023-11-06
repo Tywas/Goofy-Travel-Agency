@@ -1,7 +1,8 @@
 
-<!-- <?php
+<?php
 session_start();
-?> -->
+$thisPage="itineraries";
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>

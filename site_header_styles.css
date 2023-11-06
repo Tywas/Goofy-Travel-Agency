@@ -42,6 +42,14 @@ nav {
 
 }
 
+.header_content ul li a#current-page {
+    margin: 0 5px;
+    background: rgb(72, 178, 244);
+    border-radius: 3px;
+    color: white;
+    text-decoration: none;
+}
+
 .header-links ul li a:hover{
     background: lightskyblue;
     border-radius: 3px;

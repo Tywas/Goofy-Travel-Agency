@@ -16,15 +16,27 @@
 
     <div class="header_content">
         <div class="header-links">
-            <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="about.php">About</a></li>
-                <li><a href="itineraries.php">Itineraries</a></li>
+        <ul>
+                <li><a href="index.php"<?php if (isset($thisPage) && $thisPage=="index"){
+                    echo " id=\"current-page\"";
+                }?>>Home</a></li>
+                <li><a href="about.php"<?php if (isset($thisPage) && $thisPage=="about"){
+                    echo " id=\"current-page\"";
+                }?>>About</a></li>
+                <li><a href="itineraries.php"<?php if (isset($thisPage) && $thisPage=="itineraries"){
+                    echo " id=\"current-page\"";
+                }?>>Itineraries</a></li>
                 <!-- <li><a href="worldmap.php">World Map</a></li> -->
-                <li><a href="packages.php">Packages</a></li>
+                <li><a href="packages.php"<?php if (isset($thisPage) && $thisPage=="packages"){
+                    echo " id=\"current-page\"";
+                }?>>Packages</a></li>
                 <!-- <li><a href="information.php">Information</a></li> -->
-                <li><a href="contact.php">Contact</a></li>
-                <li><a href="user.php">User</a></li>
+                <li><a href="contact.php"<?php if (isset($thisPage) && $thisPage=="contact"){
+                    echo " id=\"current-page\"";
+                }?>>Contact</a></li>
+                <li><a href="user.php"<?php if (isset($thisPage) && $thisPage=="user"){
+                    echo " id=\"current-page\"";
+                }?>>User</a></li>
             </ul>
         </div>
     </div>

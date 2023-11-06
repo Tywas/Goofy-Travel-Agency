@@ -1,3 +1,4 @@
+<?php $thisPage="contact"; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

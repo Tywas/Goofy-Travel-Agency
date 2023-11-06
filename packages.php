@@ -1,3 +1,4 @@
+<?php $thisPage="packages"; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

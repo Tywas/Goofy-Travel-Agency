@@ -1,3 +1,4 @@
+<?php $thisPage="index"; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

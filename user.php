@@ -10,6 +10,9 @@ if(isset($_SESSION['authenticated']) && !$_SESSION['authenticated']) {
     header('Location: login.php');
     exit; 
 }
+
+$thisPage="user";
+
 ?>
 
 <!DOCTYPE html>
