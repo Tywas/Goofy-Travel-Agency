@@ -79,57 +79,67 @@ if(!preg_match("/^[a-z ,.'-]+$/i", $lname)) {
 }
 
 if($flag == 0){
-    // header("Location: login.php");
-    // exit();
-}
+    // connect to database
+    $url = getenv('JAWSDB_URL');
+    $dbparts = parse_url($url);
+
+    $hostname = $dbparts['host'];
+    $dbusername = $dbparts['user'];
+    $dbpassword = $dbparts['pass'];
+    $database = ltrim($dbparts['path'],'/');
+
+    try {
+        $conn = new PDO("mysql:host=$hostname;dbname=$database", $dbusername, $dbpassword);
+        // set the PDO error mode to exception
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        echo "Connected successfully";
+        
+        $query = "INSERT INTO users (Fname, Lname, username, email, pwd)
+        VALUES (:Fname, :Lname, :username, :email, :pwd);";
+        
+        $stmt = $pdo->prepare($query);
+        
+        $stmt->bindParam(":Fname", $fname);
+        $stmt->bindParam(":Lname", $lname);
+        $stmt->bindParam(":username", $username);
+        $stmt->bindParam(":email", $email);
+        $stmt->bindParam(":pwd", $password);
+
+        $stmt->execute();
+        
+        $query = "SELECT * FROM users;";
+        $stmt = $pdo->prepare($query);
+        $stmt->execute();
+
+        $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        // print resutlts
+        foreach($results as $result){
+            print_r($results[$result], 1);
+        }
+
+        $conn = null;
+        $stmt = null;
+        
+        // header("Location: login.php");
+        // exit();
+    }
+    catch(PDOException $e) {
+        echo "Connection failed: " . $e->getMessage();
+        // die("Connection failed: " . $e->getMessage());
+    }
+        // header("Location: login.php");
+        // exit();
+    }
 elseif($flag == 1){ # error in validation
     $_SESSION['messages'] = $validation_errors;
-    // header("Location: register.php");
-    // exit();
+    header("Location: register.php");
+    exit();
 }
 
 // would only need to connect to database if flag is 0
 echo "hello";
-// $dao = new Dao();
-// $dao->getConnection();
 
-$url = getenv('JAWSDB_URL');
-$dbparts = parse_url($url);
 
-$hostname = $dbparts['host'];
-$dbusername = $dbparts['user'];
-$dbpassword = $dbparts['pass'];
-$database = ltrim($dbparts['path'],'/');
-
-try {
-    $conn = new PDO("mysql:host=$hostname;dbname=$database", $dbusername, $dbpassword);
-    // set the PDO error mode to exception
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Connected successfully";
-    
-    $query = "INSERT INTO users (Fname, Lname, username, email, pwd)
-    VALUES (:Fname, :Lname, :username, :email, :pwd);";
-    
-    $stmt = $pdo->prepare($query);
-    
-    $stmt->bindParam(":Fname", $fname);
-    $stmt->bindParam(":Lname", $lname);
-    $stmt->bindParam(":username", $username);
-    $stmt->bindParam(":email", $email);
-    $stmt->bindParam(":pwd", $password);
-
-    $stmt->execute();
-    
-    $conn = null;
-    $stmt = null;
-    
-    header("Location: login.php");
-    exit();
-}
-catch(PDOException $e) {
-    echo "Connection failed: " . $e->getMessage();
-    // die("Connection failed: " . $e->getMessage());
-}
 
 
 
