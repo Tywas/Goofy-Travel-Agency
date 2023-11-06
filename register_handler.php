@@ -117,7 +117,7 @@ if($flag == 0){
         } else {
             echo "inside for loop";
             foreach ($resutls as $row) {
-                echo "inside foreachloop"
+                echo "inside foreachloop";
                 echo htmlspecialchars($row['user_id']) . "\n";
                 echo htmlspecialchars($row['Fname']) . "\n";
                 echo htmlspecialchars($row['Lname']) . "\n";
