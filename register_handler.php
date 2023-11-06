@@ -115,6 +115,7 @@ if($flag == 0){
         // print resutlts
         foreach($results as $result){
             print_r($results[$result], 1);
+            echo $results[$result] . "\n";
         }
 
         $conn = null;
