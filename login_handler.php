@@ -14,10 +14,12 @@ $logger->LogDebug("User [{$username}] attempting to log in");
 // for now check if exact name and password
 
 if ($username == 'tywas' && $password == 'abc123') {
-    $_SESSION['auth'] = true;
-    
+    $_SESSION['authenticated'] = true;
+    header("Location: user.php");
+    exit();
 } else {
     $logger->LogWarn("User [{$username}] invalid username or password");
+    $_SESSION['authenticated'] = false;
     $_SESSION['message'] = 'Invalid Username or Password';
     // header("Location: login.php");
     // exit();
@@ -31,6 +33,8 @@ if ($username == 'tywas' && $password == 'abc123') {
 echo "<pre>" . print_r($_POST,1) . "</pre";
 
 echo "<pre>" . print_r($username, 1) . "   and... " . print_r($password, 1) . "</pre";
+
+echo "<pre>" . print_r($_SESSION,1) . "</pre";
 
 // echo "i'm a comment handler";
 

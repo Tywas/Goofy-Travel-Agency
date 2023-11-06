@@ -27,15 +27,15 @@ session_start();
             <input type="password" placeholder="password" name="password" id="password"> </input>
             <input type="submit" value="LOGIN" id="login_button"> </input>
             <p class="register_message">Not registered? <a href="register.php">Create an account</a></p>
+            <p class="registration_error_message">
+                <?php
+                    if(isset($_SESSION['message'])){
+                        echo $_SESSION['message'];
+                        unset($_SESSION['message']);
+                    }
+                ?>
+            </p>
             </form>
-            <!-- <?php
-                // echo "<pre>" . isset($_SESSION['message']) . "</pre>";
-                // if(isset($_SESSION['message'])) {
-                    // echo "<div class=login_message id='message'>" . $_SESSION['message'] . " <span class='close'>X</span></div>";
-                    // unset($_SESSION['message']);
-                // }
-            ?>  -->
-
             </div>
         </div>
     </body>

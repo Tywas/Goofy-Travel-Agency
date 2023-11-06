@@ -34,9 +34,9 @@ session_start();
                             if(isset($_SESSION['messages'])){
                                 foreach($_SESSION['messages'] as $col_name => $string) {
                                     echo "<p class='registration_error_message'>" . $_SESSION['messages'][$col_name] . "</p>";
-                                    unset($_SESSION['message'][$col_name]);
+                                    unset($_SESSION['messages'][$col_name]);
                                 };
-                                unset($_SESSION['message']);
+                                unset($_SESSION['messages']);
                             }
                         ?>
                 </form>

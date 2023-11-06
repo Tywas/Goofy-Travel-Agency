@@ -1,8 +1,16 @@
-<!-- <section id="user">
-    <h2>User Dashboard</h2>
-    <p>Welcome, [User Name], to your personalized user dashboard. Here, you can manage your bookings, update your profile, and access exclusive offers and discounts.</p>
-    <p>Your travel journey starts here. Explore your options and embark on exciting adventures with Travel Adventure Agency.</p>
-</section> -->
+<?php
+session_start();
+
+if(!isset($_SESSION['authenticated'])) {
+    header('Location: login.php');
+    exit; 
+}
+
+if(isset($_SESSION['authenticated']) && !$_SESSION['authenticated']) {
+    header('Location: login.php');
+    exit; 
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
