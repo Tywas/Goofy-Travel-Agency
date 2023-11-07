@@ -23,7 +23,7 @@ try {
     $conn = new PDO("mysql:host=$hostname;dbname=$database", $dbusername, $dbpassword);
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Connected successfully";
+    echo "Connected successfully!   ";
 
     $query = "SELECT user_id, Fname, username, pwd FROM users WHERE username = :username;";
     $stmt = $conn->prepare($query);
@@ -35,7 +35,11 @@ try {
     if (!empty($result)) {
         var_dump($result);
         echo "results have been found";
-        $row = $result->fetch_assoc();
+        echo $result['user_id']
+        echo $result['Fname'];
+        echo $result['username'];
+        echo $result['pwd'];
+        // $row = $result->fetch_assoc();
         // if(isset($row)){
         //     echo "inside rows";
         //     echo $row['user_id'];
