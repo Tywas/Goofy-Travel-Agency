@@ -37,27 +37,15 @@ try {
         echo "results have been found";
         foreach($result as $user){
             echo "MORE results ";
-            echo $user['user_id'];
-            echo $user['Fname'];
-            echo $user['username'];
-            echo $user['pwd'];
+            $db_userid = $user['user_id'];
+            $db_fname = $user['Fname'];
+            $db_user = $user['username'];
+            $db_pwd = $user['pwd'];
         }
-        // echo "number of elements" . sizeof($results);
-        // echo $result[0]['user_id'];
-        // echo $result[0]['Fname'];
-        // echo $result[0]['username'];
-        // echo $result[0]['pwd'];
-        // $row = $result->fetch_assoc();
-        // if(isset($row)){
-        //     echo "inside rows";
-        //     echo $row['user_id'];
-        //     echo $row['Fname'];
-        //     echo $row['username'];
-        //     echo $row['pwd'];
-        //     if($password == $row['pwd']){
-        //         echo "ding ding ding ding!!!!";
-        //     }
-        // }
+
+        if ($db_pwd == $password){
+            echo "ding ding ding ding!!!!";
+        }
         echo "after data showing";
     } else {
         print_r($result,1);
