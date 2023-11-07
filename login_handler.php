@@ -30,21 +30,22 @@ try {
     $stmt->bindParam(":username", $username);
     // $stmt->bindParam(":pwd", $pwd);
     $stmt->execute();
-    $result = $stmt->get_result();
+    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
     echo "statement executed";
-    if ($result) {
-        $row = $result->fetch_assoc();
+    if (!empty($result)) {
+        var_dump($result);
         echo "results have been found";
-        if(isset($row)){
-            echo "inside rows";
-            echo $row['user_id'];
-            echo $row['Fname'];
-            echo $row['username'];
-            echo $row['pwd'];
-            if($password == $row['pwd']){
-                echo "ding ding ding ding!!!!";
-            }
-        }
+        $row = $result->fetch_assoc();
+        // if(isset($row)){
+        //     echo "inside rows";
+        //     echo $row['user_id'];
+        //     echo $row['Fname'];
+        //     echo $row['username'];
+        //     echo $row['pwd'];
+        //     if($password == $row['pwd']){
+        //         echo "ding ding ding ding!!!!";
+        //     }
+        // }
         echo "after data showing";
     } else {
         print_r($result,1);
