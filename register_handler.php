@@ -106,40 +106,8 @@ if($flag == 0){
         $stmt->bindParam(":pwd", $password);
         $stmt->execute();
 
-        // echo "insert has been executed";
-
-        // $query2 = "SELECT * FROM users;";
-        // $stmt2 = $conn->prepare($query2);
-        // $stmt2->execute();
-        // $results = $conn->query("SELECT * FROM users")->fetchAll(PDO::FETCH_ASSOC);
-
-        // if (empty($results)) {
-        //     echo "<div>" . "<p>there are no resutls</p>" . "</div>";
-        // } else {
-        //     echo "inside for loop\n";
-        //     var_dump($results);
-        //     foreach ($resutls as $row) {
-        //         echo "inside foreachloop\n";
-        //         echo htmlspecialchars($row['user_id']) . "\n";
-        //         echo htmlspecialchars($row['Fname']) . "\n";
-        //         echo htmlspecialchars($row['Lname']) . "\n";
-        //         echo htmlspecialchars($row['username']) . "\n";
-        //         echo htmlspecialchars($row['email']) . "\n";
-        //         echo htmlspecialchars($row['pwd']) . "\n";
-        //     }
-        // }
-        // echo "\n\n username password selcet only";
-        // $results = $conn->query("SELECT username, pwd FROM users")->fetchAll(PDO::FETCH_ASSOC);
-        // foreach ($resutls as $user) {
-        //     echo "inside foreach loop\n";
-        //     echo htmlspecialchars($user['username']) . "\n";
-        //     echo htmlspecialchars($user['pwd']) . "\n";
-        // }
         $conn = null;
         $stmt = null;
-        
-        header("Location: login.php");
-        exit();
     }
     catch(PDOException $e) {
         echo "Connection failed: " . $e->getMessage();
@@ -147,7 +115,7 @@ if($flag == 0){
     }
         header("Location: login.php");
         exit();
-    }
+}
 elseif($flag == 1){ # error in validation
     $_SESSION['messages'] = $validation_errors;
     header("Location: register.php");

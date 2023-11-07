@@ -1,4 +1,7 @@
-<?php $thisPage="contact"; ?>
+<?php 
+session_start();
+$thisPage="contact"; 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

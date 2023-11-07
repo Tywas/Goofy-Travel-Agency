@@ -37,6 +37,11 @@
                 <li><a href="user.php"<?php if (isset($thisPage) && $thisPage=="user"){
                     echo " id=\"current-page\"";
                 }?>>User</a></li>
+                <?php
+                    if(isset($_SESSION['authenticated'])) {
+                        echo "<li><a href=\"logout.php\">Logout</a></li>"; 
+                    }
+                ?>
             </ul>
         </div>
     </div>

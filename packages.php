@@ -1,4 +1,7 @@
-<?php $thisPage="packages"; ?>
+<?php 
+session_start();
+$thisPage="packages"; 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

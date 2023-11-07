@@ -3,12 +3,12 @@ session_start();
 
 if(!isset($_SESSION['authenticated'])) {
     header('Location: login.php');
-    exit; 
+    exit(); 
 }
 
 if(isset($_SESSION['authenticated']) && !$_SESSION['authenticated']) {
     header('Location: login.php');
-    exit; 
+    exit(); 
 }
 
 $thisPage="user";

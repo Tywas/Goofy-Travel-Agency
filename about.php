@@ -1,4 +1,7 @@
-<?php $thisPage="about"; ?>
+<?php 
+session_start();
+$thisPage="about"; 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

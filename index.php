@@ -1,4 +1,7 @@
-<?php $thisPage="index"; ?>
+<?php 
+session_start();
+$thisPage="index"; 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
