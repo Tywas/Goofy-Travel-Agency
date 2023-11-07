@@ -11,7 +11,7 @@ p {
 }
 
 .image_background_and_content {
-  background: "Ininerary_images/Space.webp";
+  background-image: "Ininerary_images/Space.webp";
   width: 100%;
   height: 100%;
 }
