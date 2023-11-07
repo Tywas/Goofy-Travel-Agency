@@ -53,9 +53,9 @@ nav {
 }
 
 .header-links ul li a:hover{
-    background: lightskyblue;
+    background: rgb(207, 237, 255);
     border-radius: 3px;
-    color: purple;
+    color: rgb(15, 95, 170);
 }
 
 .checkbtn svg{

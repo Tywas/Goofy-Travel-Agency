@@ -25,7 +25,7 @@ try {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     echo "Connected successfully";
 
-    $query = "SELECT user_id, Fname, username, pwd FROM users WHERE username=:username && pwd=:pwd;";
+    $query = "SELECT user_id, Fname, username, pwd FROM users WHERE username=:username;";
     $stmt = $conn->prepare($query);
     $stmt->bindParam(":username", $username);
     $stmt->bindParam(":pwd", $pwd);
@@ -38,6 +38,9 @@ try {
             echo $row['Fname'];
             echo $row['username'];
             echo $row['pwd'];
+            if($password == $row['pwd']){
+                echo "ding ding ding ding!!!!"
+            }
         }
     } else {
         print_r($result,1);
