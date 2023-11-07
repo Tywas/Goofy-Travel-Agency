@@ -35,10 +35,11 @@ try {
     if (!empty($result)) {
         var_dump($result);
         echo "results have been found";
-        echo $result['user_id'];
-        echo $result['Fname'];
-        echo $result['username'];
-        echo $result['pwd'];
+        echo "number of elements" . sizeof($results);
+        echo $result[0]['user_id'];
+        echo $result[0]['Fname'];
+        echo $result[0]['username'];
+        echo $result[0]['pwd'];
         // $row = $result->fetch_assoc();
         // if(isset($row)){
         //     echo "inside rows";
