@@ -3,9 +3,29 @@ body {
 }
 /* header styles */
 
-/* h1 {
-  color: blue;
-} */
+.image_container {
+  position: relative;
+  display: inline-block;
+}
+
+.image_container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 20%; 
+  left: 25%; 
+  transform: translate(-50%, -50%); 
+  /* background-color: #000000;  */
+  color: #fff; 
+  padding: 10px 20px; 
+  font-size: 22px; 
+  text-align: center;
+}
+
 p {
   color: #efefef;
 }
