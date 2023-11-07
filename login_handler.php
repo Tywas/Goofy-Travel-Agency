@@ -28,7 +28,7 @@ try {
     $query = "SELECT user_id, Fname, username, pwd FROM users WHERE username=:username;";
     $stmt = $conn->prepare($query);
     $stmt->bindParam(":username", $username);
-    $stmt->bindParam(":pwd", $pwd);
+    // $stmt->bindParam(":pwd", $pwd);
     $stmt->execute();
     $result = $stmt->get_result();
     if ($result) {
