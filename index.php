@@ -12,14 +12,16 @@ $thisPage="index";
     <link rel="stylesheet" href="site_header_styles.css">
     <link rel="icon" type="image/x-icon" href="favicon-32x32.ico">
 <body>
-
-
     <header>
         <? include "site_header.php" ?>
     </header>
 
     <div>
-        testing 123
+        <!-- <img class="itinerary_img" src="Ininerary_images\Space.webp"> </img> -->
+        <!-- text-align:center;white-space:pre-wrap; -->
+        <div>
+        <h1 class='image-styling'> The Future of Travel</h1>
+        <div>
     </div>
     <section id="home">
         <!-- Add introductory content here -->
