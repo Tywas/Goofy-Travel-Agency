@@ -45,8 +45,8 @@ try {
 
         if ($db_pwd == $password){
             $_SESSION['authenticated'] = true;
-            $_SESSION['fname'] = $db_fname
-            $_SESSION['user_id'] = $db_userid
+            $_SESSION['fname'] = $db_fname;
+            $_SESSION['user_id'] = $db_userid;
             header("Location: user.php");
             exit();
         }
@@ -59,9 +59,10 @@ try {
         }
         // echo "after data showing";
     } else {
-        print_r($result,1);
-        echo "i dont think anything was taken from the database";
-    //call error recovery routine
+        $_SESSION['authenticated'] = false;
+        $_SESSION['message'] = 'Invalid Username or Password';
+        header("Location: login.php");
+        exit();
     }
 }
 catch(PDOException $e) {
