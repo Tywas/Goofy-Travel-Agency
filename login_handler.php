@@ -39,7 +39,7 @@ try {
             echo $row['username'];
             echo $row['pwd'];
             if($password == $row['pwd']){
-                echo "ding ding ding ding!!!!"
+                echo "ding ding ding ding!!!!";
             }
         }
     } else {
