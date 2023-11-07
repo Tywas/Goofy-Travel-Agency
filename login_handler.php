@@ -25,15 +25,18 @@ try {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     echo "Connected successfully";
 
-    $query = "SELECT user_id, Fname, username, pwd FROM users WHERE username=:username;";
+    $query = "SELECT user_id, Fname, username, pwd FROM users WHERE username = :username;";
     $stmt = $conn->prepare($query);
     $stmt->bindParam(":username", $username);
     // $stmt->bindParam(":pwd", $pwd);
     $stmt->execute();
     $result = $stmt->get_result();
+    echo "statement executed";
     if ($result) {
         $row = $result->fetch_assoc();
+        echo "results have been found";
         if(isset($row)){
+            echo "inside rows";
             echo $row['user_id'];
             echo $row['Fname'];
             echo $row['username'];
@@ -42,6 +45,7 @@ try {
                 echo "ding ding ding ding!!!!";
             }
         }
+        echo "after data showing";
     } else {
         print_r($result,1);
         echo "i dont think anything was taken from the database";
