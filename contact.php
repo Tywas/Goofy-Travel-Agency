@@ -17,8 +17,15 @@ $thisPage="contact";
         <? include "site_header.php" ?>
     </header>
 
-    <section id="contact">
-        <!-- Add content for the contact page here -->
+    <section class="contact-info">
+        <h2>Contact Information</h2>
+        <address>
+            G.T.A. The Goofiest Travel Agency<br>
+            123 Main Street<br>
+            Boise, ID 83706<br>
+            Phone: <a href="tel:1234567890">123-456-7890</a><br>
+            Email: <a href="mailto:GTA@GTA.com">GTA@GTA.com</a>
+        </address>
     </section>
 
     <footer>
