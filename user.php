@@ -29,21 +29,11 @@ $thisPage="user";
     <header>
         <? include "site_header.php" ?>
     </header> 
-    <header>
-        <h1>User Dashboard</h1>
-        <nav>
-            <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="about.php">About</a></li>
-                <li><a href="packages.php">Packages</a></li>
-                <li><a href="contact.php">Contact</a></li>
-                <li><a href="login.php">Login</a></li>
-            </ul>
-        </nav>
-    </header>
+    <h1>User Dashboard</h1>
+
 
     <section id="about">
-    <p>Welcome, [User Name], to your personalized user dashboard. Here, you can manage your bookings, update your profile, and access exclusive offers and discounts.</p>
+    <p>Welcome, <?php echo $_SESSION['fname']?> to your personalized user dashboard. Here, you can have your own account.</p>
     <p>Your travel journey starts here. Explore your options and embark on exciting adventures with G.T.A.</p>
 
         <!-- Add content for the about page here -->
