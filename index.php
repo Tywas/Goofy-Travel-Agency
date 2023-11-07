@@ -16,11 +16,11 @@ $thisPage="index";
         <? include "site_header.php" ?>
     </header>
 
-    <div>
+    <div class="image_background_and_content">
         <!-- <img class="itinerary_img" src="Ininerary_images\Space.webp"> </img> -->
         <!-- text-align:center;white-space:pre-wrap; -->
-        <div>
-        <h1 class='image-styling'> The Future of Travel</h1>
+        <div class="image_content">
+            <h1 class='image_styling'> The Future of Travel</h1>
         <div>
     </div>
     <section id="home">
