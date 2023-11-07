@@ -35,11 +35,18 @@ try {
     if (!empty($result)) {
         var_dump($result);
         echo "results have been found";
-        echo "number of elements" . sizeof($results);
-        echo $result[0]['user_id'];
-        echo $result[0]['Fname'];
-        echo $result[0]['username'];
-        echo $result[0]['pwd'];
+        foreach($result as $user){
+            echo "MORE results ";
+            echo $user['user_id'];
+            echo $user['Fname'];
+            echo $user['username'];
+            echo $user['pwd'];
+        }
+        // echo "number of elements" . sizeof($results);
+        // echo $result[0]['user_id'];
+        // echo $result[0]['Fname'];
+        // echo $result[0]['username'];
+        // echo $result[0]['pwd'];
         // $row = $result->fetch_assoc();
         // if(isset($row)){
         //     echo "inside rows";
