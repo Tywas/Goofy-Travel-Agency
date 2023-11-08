@@ -17,44 +17,27 @@ $thisPage="packages";
         <? include "site_header.php" ?>
     </header>
 
-    <section id="packages">
-    <h2>Our Itineraries</h2>
-    <p>Explore our diverse range of travel itineraries designed to cater to all types of adventurers. From cultural excursions to thrilling outdoor adventures, we have something for everyone.</p>
-    <p>Click on the itineraries to learn more about each trip's highlights, duration, and pricing. Start planning your next adventure with us today!</p>
-        <!-- Add content for the packages page here -->
-    </section>
+    <div class="card-box">
+        <div class="card">
+            <h2>*Limited Time* Free Itineraries</h2>
+            <p class="card-discription">
+                Most people pay for their personalized
+                itinerary but we have a best trips planned
+                just for you!
+            </p>
+            <h3>$0</h3>
+            <h6>For One Year!</h6>
+            <p class="n_price">Normal : <del>$1,500 / month </del></p>
+            <h4>Features</h4>
+            <p class="card-features">- Great fun!</p>
+            <p class="card-features">- Lots of adventure!</p>
+            <p class="card-features">- Just a little bit Goofy!</p>
+            <a href="itineraries.php">
+            <input class="card-btn_effect" type="button" value="Select">
+            </a>
+        </div>
+    </div>
 
-    <footer>
-	<div class="footer-content">
-	   <div class="footer-section-col-1">
-              <h2>About Us</h2>
-              <p>G.T.A., where we believe that laughter is the best travel companion! 
-                We're not your typical travel agency—we're the masters of mirth, the sultans of silliness, 
-                and your go-to guides for the wildest adventures around the globe.
-                <br></br>
-            
-                Forget about serious sightseeing, since we specialize in whimsical wonders our itineraries
-                 are carefully crafted to include absurd attractions.  At G.T.A., the journey may be goofy,
-                 but the memories are serious.</p>
-           </div>
-	
-	   <div class="footer-section-col-2">
-               <h2>Quick Links</h2>
-               <ul>
-               <li><a href="index.php">Home</a></li>
-                   <li><a href="about.php">About</a></li>
-		   <!-- <li><a href="worldmap.php">World Map</a></li> -->
-                   <li><a href="packages.php">Packages</a></li>
-                   <!-- <li><a href="information.php">Information</a></li> -->
-                   <!-- <li><a href="itineraries.php">Itineraries</a></li> -->
-                   <li><a href="contact.php">Contact</a></li>
-                   <li><a href="user.php">User</a></li>
-               </ul>
-           </div>
-
-	</div>
-    	<div class="footer-content-copyright">
-	        <p class="copyright" data-type="group">© 2023 G.T.A. Goofiest of Travel Agencies.</p> </div>
-    </footer>
+    <?php include "site_footer.php"; ?>
 </body>
 </html>
