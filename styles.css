@@ -148,6 +148,35 @@ body {
   white-space:pre-wrap;
 }
 
+/* Itinerary Description page styles */
+.itinerary-description {
+	width:100%;
+  border:2px solid #000000;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  background-color: white;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.itinerary-table_headers{
+  background-color: rgb(255, 200, 0);
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.itinerary-table_info{
+  display: table-row;
+  background: #f6f6f6;
+  &:nth-of-type(odd){
+    background: #e9e9e9;
+  }
+}
+
+.itinerary-table_info:hover{
+  background-color: rgba(236, 160, 112, 0.486);
+}
+
 /* .hero {
   width: 100vw;
   height: 40vh;

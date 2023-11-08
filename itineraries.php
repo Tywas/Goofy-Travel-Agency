@@ -25,7 +25,7 @@ $thisPage="itineraries";
             <div class="itinerary-container">
                 <h1>Itinerary Insiration Page</h1>
             
-                <a href="index.php" class="itinerary_link"> 
+                <a href="puddle.php" class="itinerary_link"> 
                     <div class="itineraries"> 
                         <h3 class="itinerary_title"> Puddle Jumping </h3>
                         <img class="itinerary_img" src="Ininerary_images\Puddle.jpg"> </img>
@@ -69,7 +69,7 @@ $thisPage="itineraries";
                 </a>
             </div>
         </section>
-        
+
         <?php include "site_footer.php"; ?>
     </body>
 </html>
