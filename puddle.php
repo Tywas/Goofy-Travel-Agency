@@ -8,8 +8,7 @@ $thisPage="itineraries";
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Itinerary_puddle</title>
-        <link rel="stylesheet" href="styles2.css">
-        <!-- <link rel="stylesheet" href="Itinerary_styles2.css"> -->
+        <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="site_header_styles.css">
 
     </head>
