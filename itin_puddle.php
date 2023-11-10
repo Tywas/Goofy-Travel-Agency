@@ -22,7 +22,7 @@ session_start();
 
         <section id="home">
             <div class="image_container">
-                <img class="home_img" src="Ininerary_images\Puddle.jpg"> 
+                <img class="itinerary_img" src="Ininerary_images\Puddle.jpg"> 
                 <div class="overlay-text">
                     <h1 class='image_styling'>What a great puddle to jump in!</h1>
                 </div>

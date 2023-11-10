@@ -22,7 +22,7 @@ session_start();
 
         <section id="home">
             <div class="image_container">
-                <img class="home_img" src="Ininerary_images\Cave.jfif"> 
+                <img class="itinerary_img" src="Ininerary_images\Cave.jfif"> 
                 <div class="overlay-text">
                     <h1 class='image_styling'>Bring your dog deep down under!</h1>
                 </div>
