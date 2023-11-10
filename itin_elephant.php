@@ -22,7 +22,7 @@ session_start();
 
         <section id="home">
             <div class="image_container">
-                <img class="itinerary_img" src="Ininerary_images\Elephants.jpg"> 
+                <img id="itinerary_img" src="Ininerary_images\Elephants.jpg"> 
                 <div class="overlay-text">
                     <h1 class='image_styling'>*Elephant Noise*("Join us!")</h1>
                 </div>

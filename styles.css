@@ -15,8 +15,8 @@ body {
   height: auto;
 }
 
-.itinerary_img {
-  min-width: 600px;
+#itinerary_img {
+  min-width: 99vw;
 }
 
 .overlay-text {

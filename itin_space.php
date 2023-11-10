@@ -22,7 +22,7 @@ session_start();
 
         <section id="home">
             <div class="image_container">
-                <img class="itinerary_img" src="Ininerary_images\Space.webp"> 
+                <img id="itinerary_img" src="Ininerary_images\Space.webp"> 
                 <div class="overlay-text">
                     <h1 class='image_styling'>Adventure is limitless!</h1>
                 </div>

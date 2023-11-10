@@ -22,7 +22,7 @@ session_start();
 
         <section id="home">
             <div class="image_container">
-                <img class="itinerary_img" src="Ininerary_images\Office cubical.jfif"> 
+                <img id="itinerary_img" src="Ininerary_images\Office cubical.jfif"> 
                 <div class="overlay-text">
                     <h1 class='image_styling'>Rember to bring your work computer on this vacation!</h1>
                 </div>
