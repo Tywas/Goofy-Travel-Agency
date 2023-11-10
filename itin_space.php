@@ -40,31 +40,32 @@ session_start();
             </tr>
             <tr class="itinerary-table_info">
                 <th>1</th>
-                <th>Morning: Arrive at the Puddle Paradise Resort, a whimsical destination known for its record-breaking puddles. Get geared up with waterproof boots and a playful attitude.</th>
-                <th>Afternoon: Start with a warm-up session, learning the art of puddle jumping from expert instructors. Practice different jumping styles and techniques to maximize the splash.</th>
-                <th>Evening: Join a puddle-themed dance party by the water's edge. Let loose and groove to the rhythm while getting splashed by synchronized puddle fountains.</th>
+                <th>Morning: Depart from Earth in a state-of-the-art space shuttle. Experience the thrill of liftoff and witness the transition from Earth's atmosphere to outer space.</th>
+                <th>Afternoon: Arrive at the International Space Station (ISS). Enjoy a spacewalk with the astronauts, experiencing the sensation of weightlessness and marveling at the Earth from orbit.</th>
+                <th>Evening: Share a meal with the ISS crew, enjoying space food specially prepared for the journey.</th>
             </tr>
             <tr class="itinerary-table_info">
                 <th>2</th>
-                <th>Morning: Embark on a puddle exploration adventure. Discover hidden puddle gems in the resort's lush surroundings. Take a guided tour with puddle experts who share fascinating facts about the science of puddles.</th>
-                <th>Afternoon: Compete in the Great Puddle Jumping Challenge. Navigate obstacle courses, master long-distance jumps, and showcase your unique jumping style. Earn points for creativity and enthusiasm.</th>
-                <th>Evening: Relax with a soothing puddle-side spa experience. Indulge in mud masks and puddle-inspired treatments to rejuvenate and refresh.</th>
+                <th>Morning: Depart from the ISS and head towards the Moon. Witness Earthrise from lunar orbit and take in the breathtaking views of the lunar landscape.</th>
+                <th>Afternoon: Land on the Moon's surface and explore iconic landmarks such as the Sea of Tranquility. Conduct experiments in the lunar environment and collect souvenirs like moon rocks.</th>
+                <th>Evening: Launch from the Moon and head towards Mars. Enjoy a space-themed dinner while in transit.</th>
             </tr>
             <tr class="itinerary-table_info">
                 <th>3</th>
-                <th>Morning: Take a hot air balloon ride over the Puddle Paradise Resort. Marvel at the landscape dotted with shimmering puddles as you enjoy breathtaking views from above.</th>
-                <th>Afternoon: Attend a puddle art workshop. Create your own masterpiece by incorporating puddle splashes into a canvas. Embrace the spontaneous and colorful world of puddle art.</th>
-                <th>Evening: Join a puddle-themed feast. Indulge in delicious dishes inspired by water, rain, and puddles. Enjoy the culinary delights while surrounded by the enchanting ambiance of illuminated puddles.</th>
+                <th>Morning: Arrive in orbit around Mars and witness the Red Planet's stunning landscapes. Take part in a virtual reality tour of Martian landmarks.</th>
+                <th>Afternoon: Descend to the Martian surface using a rover. Explore the Martian terrain, conduct scientific experiments, and communicate with mission control back on Earth.</th>
+                <th>Evening: Return to the spacecraft and watch a Mars sunset from orbit before departing for the journey back to Earth.</th>
             </tr>
             <tr class="itinerary-table_info">
                 <th>4</th>
-                <th>Morning: Challenge yourself with extreme puddle jumping. Head to the resort's puddle cliffs and experience the thrill of jumping from different heights into giant puddles. Safety is a priority, but the excitement is guaranteed.</th>
-                <th>Afternoon: Participate in a puddle photography contest. Capture the most dynamic and picturesque puddle jumps, splashes, and reflections. Share your photos with fellow puddle enthusiasts for a chance to win exciting prizes.</th>
-                <th>Evening: Attend the Puddle Carnival, a lively celebration with games, rides, and entertainment inspired by the joy of puddle jumping. Conclude the night with a grand fireworks display reflecting off the resort's largest puddle.</th>
+                <th>Morning: Begin the return journey to Earth. Reflect on the extraordinary experiences and discoveries made during the space voyage.</th>
+                <th>Afternoon: Participate in space-themed workshops and activities onboard, learning about the future of space exploration and the technologies used in the mission.</th>
+                <th>Evening: Enjoy a farewell dinner with the fellow space travelers and the crew, sharing stories and memories from the incredible journey.</th>
             </tr>
             <tr class="itinerary-table_info">
                 <th>5</th>
-                <th>Morning: Bid farewell to Puddle Paradise with a group puddle jump, creating a spectacular and memorable splash finale. Receive a certificate of achievement and a Puddle Jumping Champion medal as a memento of your exhilarating puddle adventure.</th>
+                <th>Morning: Prepare for re-entry into Earth's atmosphere. Experience the intense heat during re-entry and the excitement of coming back home.</th>
+                <th>Afternoon: Safely land back on Earth, completing the once-in-a-lifetime space travel adventure. Receive a certificate of completion and a personalized space travel memento.</th>
         </table>
 
 
