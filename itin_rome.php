@@ -40,31 +40,33 @@ session_start();
             </tr>
             <tr class="itinerary-table_info">
                 <th>1</th>
-                <th>Morning: Arrive at the Puddle Paradise Resort, a whimsical destination known for its record-breaking puddles. Get geared up with waterproof boots and a playful attitude.</th>
-                <th>Afternoon: Start with a warm-up session, learning the art of puddle jumping from expert instructors. Practice different jumping styles and techniques to maximize the splash.</th>
-                <th>Evening: Join a puddle-themed dance party by the water's edge. Let loose and groove to the rhythm while getting splashed by synchronized puddle fountains.</th>
+                <th>Morning: Wake up to a virtual Roman sunrise in your backyard. Immerse yourself in the ambiance of ancient Rome by playing authentic Roman music and enjoying a cup of espresso.</th>
+                <th>Afternoon: Begin your journey to "Rome" by walking through a portal or a creative entrance that transports you to a digital rendition of the city. Feel the excitement as you step into the vibrant streets filled with the sounds of markets and chatter.</th>
+                <th>Evening: go back inside.</th>
             </tr>
             <tr class="itinerary-table_info">
                 <th>2</th>
-                <th>Morning: Embark on a puddle exploration adventure. Discover hidden puddle gems in the resort's lush surroundings. Take a guided tour with puddle experts who share fascinating facts about the science of puddles.</th>
-                <th>Afternoon: Compete in the Great Puddle Jumping Challenge. Navigate obstacle courses, master long-distance jumps, and showcase your unique jumping style. Earn points for creativity and enthusiasm.</th>
-                <th>Evening: Relax with a soothing puddle-side spa experience. Indulge in mud masks and puddle-inspired treatments to rejuvenate and refresh.</th>
+                <th>Morning: Visit the virtual Vatican City in your backyard. Marvel at the digital recreation of St. Peter's Basilica and the stunning artwork within the Sistine Chapel. Take a virtual tour with a guide providing historical insights.</th>
+                <th>Afternoon: Indulge in a homemade Italian lunch with virtual views of the Roman Forum. Enjoy classic dishes while virtually surrounded by the ancient ruins, digitally integrated into your backyard landscape.</th>
+                <th>Evening: go back inside.</th>
             </tr>
             <tr class="itinerary-table_info">
                 <th>3</th>
-                <th>Morning: Take a hot air balloon ride over the Puddle Paradise Resort. Marvel at the landscape dotted with shimmering puddles as you enjoy breathtaking views from above.</th>
-                <th>Afternoon: Attend a puddle art workshop. Create your own masterpiece by incorporating puddle splashes into a canvas. Embrace the spontaneous and colorful world of puddle art.</th>
-                <th>Evening: Join a puddle-themed feast. Indulge in delicious dishes inspired by water, rain, and puddles. Enjoy the culinary delights while surrounded by the enchanting ambiance of illuminated puddles.</th>
+                <th>Morning: Explore a digital replica of the Colosseum that magically appears in your backyard. Take a virtual tour of this iconic structure, learning about its history, architecture, and the gladiator battles that once took place within its walls.</th>
+                <th>Afternoon: Have a Roman-themed picnic in your backyard. Set up a cozy spot with Roman-inspired snacks and beverages, all while enjoying the view of the digitally enhanced Colosseum.</th>
+                <th>Evening: go back inside.</th>
             </tr>
             <tr class="itinerary-table_info">
                 <th>4</th>
-                <th>Morning: Challenge yourself with extreme puddle jumping. Head to the resort's puddle cliffs and experience the thrill of jumping from different heights into giant puddles. Safety is a priority, but the excitement is guaranteed.</th>
-                <th>Afternoon: Participate in a puddle photography contest. Capture the most dynamic and picturesque puddle jumps, splashes, and reflections. Share your photos with fellow puddle enthusiasts for a chance to win exciting prizes.</th>
-                <th>Evening: Attend the Puddle Carnival, a lively celebration with games, rides, and entertainment inspired by the joy of puddle jumping. Conclude the night with a grand fireworks display reflecting off the resort's largest puddle.</th>
+                <th>Morning: Experience a virtual walk through the charming streets of Trastevere. Immerse yourself in the digital recreation of this picturesque neighborhood, complete with colorful buildings, cobblestone streets, and lively cafes.</th>
+                <th>Afternoon: Attend a virtual pasta-making class in your backyard. Learn the art of making traditional Roman pasta dishes from a digital chef, and enjoy the fruits of your labor with a delicious homemade pasta lunch.</th>
+                <th>Evening: go back inside.</th>
             </tr>
             <tr class="itinerary-table_info">
                 <th>5</th>
-                <th>Morning: Bid farewell to Puddle Paradise with a group puddle jump, creating a spectacular and memorable splash finale. Receive a certificate of achievement and a Puddle Jumping Champion medal as a memento of your exhilarating puddle adventure.</th>
+                <th>Morning: Conclude your virtual Roman adventure with a farewell breakfast in your backyard. Reflect on the unique and immersive experience you've had, surrounded by the digitally transformed elements of Rome.</th>
+                <th>Afternoon: Share your backyard Roman adventure with friends and family by creating a virtual photo album. Use Photoshop to enhance and edit the photos, adding a touch of fantasy to your incredible Roman staycation.</th>
+                <th>Evening: go back inside.</th>
         </table>
 
 

@@ -18,9 +18,8 @@ body {
   display: block;
   width: 100vw;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  object-fit: fill;
+  margin: 0 auto;
+  background-size: cover;
 }
 
 .overlay-text {
