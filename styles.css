@@ -6,6 +6,7 @@ body {
 .image_container {
   position: relative;
   display: inline-block;
+  margin: 0 auto;
 }
 
 .image_container img {
@@ -15,11 +16,7 @@ body {
 }
 
 .itinerary_img {
-  display: block;
-  width: 100vw;
-  height: auto;
-  margin: 0 auto;
-  background-size: cover;
+  min-width: 200px;
 }
 
 .overlay-text {
