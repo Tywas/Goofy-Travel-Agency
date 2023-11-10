@@ -1,67 +1,64 @@
 <?php
+// Dao.php
+// class for saving and getting users from MySQL
 
 // require_once 'KLogger.php';
-
-// class for saving and getting user information
-class Dao{
-
-    // $logger = new KLogger ("log.txt", KLogger::WARN);
-    
-
-    // private $hostname = "n4m3x5ti89xl6czh.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
-    // private $database = "tjtep33stx0e3vfb";
-    // private $username = "k2lbgig48opk9klc";
-    // private $password = "ler3hqx86vf6xan6";
-
-    
-    $url = "mysql://k2lbgig48opk9klc:ler3hqx86vf6xan6@n4m3x5ti89xl6czh.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/tjtep33stx0e3vfb";
-    $dbparts = parse_url($url);
-    
-    $hostname = $dbparts['host'];
-    $username = $dbparts['user'];
-    $password = $dbparts['pass'];
-    $database = ltrim($dbparts['path'],'/');
-
-
-
-
-    // public function __construct () {
-    //     $this->logger = new KLogger ( "log.txt" , KLogger::DEBUG);
-    // }
+class Dao {
 
     public function getConnection () {
+        // connect to database
+        $url = getenv('JAWSDB_URL');
+        $dbparts = parse_url($url);
+
+        $hostname = $dbparts['host'];
+        $dbusername = $dbparts['user'];
+        $dbpassword = $dbparts['pass'];
+        $database = ltrim($dbparts['path'],'/');
         try {
-            $conn = new PDO("mysql:host=$hostname;dbname=$database", $username, $password);
+            $conn = new PDO("mysql:host=$hostname;dbname=$database", $dbusername, $dbpassword);
             // set the PDO error mode to exception
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            echo "Connected successfully";
-            }
-                catch(PDOException $e)
-            {
+        }
+        catch(PDOException $e) {
             echo "Connection failed: " . $e->getMessage();
-            }
+            // die("Connection failed: " . $e->getMessage());
+        }
+        return $conn
     }
 
-    public function saveComment ($name, $comment) {
+    public function addUser ($fname, $lname, $username, $email, $password) {
         $conn = $this->getConnection();
-        $saveQuery =
-            "INSERT INTO comments
-            (name, comment)
-            VALUES
-            (:name, :comment)";
-        $q = $conn->prepare($saveQuery);
-        $q->bindParam(":name", $name);
-        $q->bindParam(":comment", $comment);
+
+        $query = "INSERT INTO users (Fname, Lname, username, email, pwd)
+        VALUES (:Fname, :Lname, :username, :email, :pwd);";
+        $stmt = $conn->prepare($query);
+        
+        $stmt->bindParam(":Fname", $fname);
+        $stmt->bindParam(":Lname", $lname);
+        $stmt->bindParam(":username", $username);
+        $stmt->bindParam(":email", $email);
+        $stmt->bindParam(":pwd", $password);
+        $stmt->execute();
+    }
+
+    public function deleteUser ($id) {
+        $conn = $this->getConnection();
+        $deleteComment =
+            "DELETE FROM user
+            WHERE user_id = :id";
+        $q = $conn->prepare($deleteComment);
+        $q->bindParam(":id", $id);
         $q->execute();
     }
-}
 
+  public function getUser ($username) {
+    $conn = $this->getConnection();
+    $query = "SELECT user_id, Fname, username, pwd FROM users WHERE username = :username;";
+    $stmt = $conn->prepare($query);
+    $stmt->bindParam(":username", $username);
+    $stmt->execute();
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    // return $conn->query("SELECT user_id, Fname, username, pwd FROM users WHERE username = :username;")->fetchAll(PDO::FETCH_ASSOC);
+  }
 
-
-
-
-
-
-
-
-
+} // end Dao
