@@ -25,14 +25,14 @@ $thisPage="itineraries";
             <div class="itinerary-container">
                 <h1>Itinerary Insiration Page</h1>
             
-                <a href="puddle.php" class="itinerary_link"> 
+                <a href="itin_puddle.php" class="itinerary_link"> 
                     <div class="itineraries"> 
                         <h3 class="itinerary_title"> Puddle Jumping </h3>
                         <img class="itinerary_img" src="Ininerary_images\Puddle.jpg"> </img>
                     </div>
                 </a>
 
-                <a href="index.php" class="itinerary_link">
+                <a href="itin_space.php" class="itinerary_link">
                     <div class="itineraries"> 
                         <h3 class="itinerary_title"> Space </h3>
                         <img class="itinerary_img" src="Ininerary_images\Space.webp"> </img>
@@ -40,28 +40,28 @@ $thisPage="itineraries";
                     </div>
                 </a>
                 
-                <a href="index.php" class="itinerary_link">
+                <a href="itin_rome.php" class="itinerary_link">
                     <div class="itineraries"> 
                         <h3 class="itinerary_title"> Rome (REMOTE) </h3>
                         <img class="itinerary_img" src="Ininerary_images\Remote france.webp"> </img>
                     </div>
                 </a>
 
-                <a href="index.php" class="itinerary_link">
+                <a href="itin_cave.php" class="itinerary_link">
                     <div class="itineraries"> 
                         <h3 class="itinerary_title"> Cave Exploring </h3>
                         <img class="itinerary_img" src="Ininerary_images\Cave.jfif"> </img>
                     </div>
                 </a>
 
-                <a href="index.php" class="itinerary_link">
+                <a href="itin_office.php" class="itinerary_link">
                     <div class="itineraries"> 
                         <h3 class="itinerary_title"> Office Cubical </h3>
                         <img class="itinerary_img" src="Ininerary_images\Office cubical.jfif"> </img>
                     </div>
                 </a>
 
-                <a href="index.php" class="itinerary_link">
+                <a href="itin_elephant.php" class="itinerary_link">
                     <div class="itineraries"> 
                         <h3 class="itinerary_title"> Elephant Simulation </h3>
                         <img class="itinerary_img" src="Ininerary_images\Elephants.jpg"> </img>

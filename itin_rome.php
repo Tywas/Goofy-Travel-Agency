@@ -1,6 +1,6 @@
 <?php
 session_start();
-$thisPage="itineraries";
+// $thisPage="itineraries";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,9 +22,9 @@ $thisPage="itineraries";
 
         <section id="home">
             <div class="image_container">
-                <img class="home_img" src="Ininerary_images\Puddle.jpg"> 
+                <img class="home_img" src="Ininerary_images\Remote france.webp"> 
                 <div class="overlay-text">
-                    <h1 class='image_styling'>What a great puddle to jump in!</h1>
+                    <h1 class='image_styling'>Adventure is Everywhere!</h1>
                 </div>
 
                 </img>
