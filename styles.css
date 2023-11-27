@@ -304,3 +304,8 @@ svg path:hover{
   font-size: 25px;
   text-decoration: underline;
 }
+/* used for jquery */
+.hovertext {
+  position: absolute;
+  background-color: #cecece;
+}

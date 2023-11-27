@@ -19,7 +19,7 @@ $thisPage="user";
 <html lang="en">
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="js/hover.js"></script>
+    <script src="js/get_class.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Dashboard</title>
@@ -40,6 +40,7 @@ $thisPage="user";
 
         <!-- Add content for the about page here -->
     </section>
+    <div class="hovertext"></div>
 
     <p class="startadventure" id="startadventure">
         Start your adventure
