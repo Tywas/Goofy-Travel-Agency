@@ -272,3 +272,35 @@ ul {
     color: #d79a31;
     text-decoration: underline;
 }
+
+/* Users map */
+svg {
+  background-color: #00384f;
+}
+svg path {
+  fill: #004f07;
+  stroke: #eee;
+  stroke-width: .25;
+}
+svg a:hover path{
+  fill: #4fc199;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+svg path:hover{
+  fill: #4fc199;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.startadventure {
+  background-color: #00094f;
+  margin-bottom: 0;
+  color: rgb(214, 235, 252);
+  text-align: center;
+  text-shadow: #01171b;
+  font-weight: bold;
+  font-size: 25px;
+  text-decoration: underline;
+}
