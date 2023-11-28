@@ -26,7 +26,7 @@ $thisPage="packages";
                 just for you!
             </p>
             <h3>$0</h3>
-            <h6>For One Year!</h6>
+            <h6>For Life!</h6>
             <p class="n_price">Normal : <del>$1,500 / month </del></p>
             <h4>Features</h4>
             <p class="card-features">- Great fun!</p>

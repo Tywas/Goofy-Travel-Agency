@@ -305,8 +305,8 @@ ul {
 
 .user_itinerary h3{
   display: inline;
-  background-color: green;
-  margin-left: 0px;
+  background-color: grey;
+  margin-left: -4px;
   margin-right: 0px;
   padding: .1vw .3vw;
   border:1px solid black;

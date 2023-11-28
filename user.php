@@ -31,8 +31,6 @@ $thisPage="user";
     <header>
         <? include "site_header.php" ?>
     </header> 
-    <h1>User Dashboard</h1>
-
 
     <section id="about">
     <p class="user_introduction">Welcome, <?php echo $_SESSION['fname']?>!</p>
