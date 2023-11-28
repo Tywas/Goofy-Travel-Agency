@@ -36,8 +36,8 @@ $thisPage="user";
 
     <section id="about">
     <p class="user_introduction">Welcome, <?php echo $_SESSION['fname']?>!</p>
-    <p class="user_intro_doc">This is your personalized dashboard. Here, you can manage your bookings, update your profile, and access exclusive offers and discounts.
-        Your travel journey starts here. Explore your options and embark on exciting adventures with G.T.A.
+    <p class="user_intro_doc">This is your personalized dashboard. Here, you can manage the countries you want to visit,
+        and mess aroung with a interactive map.  Your travel journey starts here. Explore your options and embark on exciting adventures with G.T.A.
     </p>
         <!-- Add content for the about page here -->
     </section>

@@ -98,12 +98,15 @@ if($flag == 0){
         VALUES (:Fname, :Lname, :username, :email, :pwd);";
         
         $stmt = $conn->prepare($query);
+
+        // Securing password using password_hash
+        $secure_pass = password_hash($password, PASSWORD_BCRYPT);
         
         $stmt->bindParam(":Fname", $fname);
         $stmt->bindParam(":Lname", $lname);
         $stmt->bindParam(":username", $username);
         $stmt->bindParam(":email", $email);
-        $stmt->bindParam(":pwd", $password);
+        $stmt->bindParam(":pwd", $secure_pass);
         $stmt->execute();
 
         $conn = null;
