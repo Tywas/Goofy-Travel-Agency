@@ -24,7 +24,7 @@ $thisPage="user";
                     </div>
                 </div>
             <form class="login-form" method="POST" action="login_handler.php">
-            <input type="text" placeholder="username" name="username" id="username"> </input>
+            <input type="text" placeholder="username" name="username" id="username" value="<?php echo isset($_POST['username']) ? $_POST['username'] : '' ?>"> </input>
             <input type="password" placeholder="password" name="password" id="password"> </input>
             <input type="submit" value="LOGIN" id="login_button"> </input>
             <p class="register_message">Not registered? <a href="register.php">Create an account</a></p>
