@@ -8,7 +8,6 @@ $logger = new KLogger ("log.txt" , KLogger::WARN);
 
 $username = $_POST['username'];
 $password = $_POST['password'];
-$secure_pass = password_hash($password, PASSWORD_BCRYPT);
 $logger->LogDebug("User [{$username}] attempting to log in");
 
 //TODO:  Validate username and password
@@ -44,7 +43,7 @@ try {
             $db_pwd = $user['pwd'];
         }
 
-        if ($db_pwd == $secure_pass){
+        if (password_verify($password, $db_pwd)){
             $_SESSION['authenticated'] = true;
             $_SESSION['fname'] = $db_fname;
             $_SESSION['user_id'] = $db_userid;
