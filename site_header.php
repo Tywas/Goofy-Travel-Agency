@@ -38,7 +38,7 @@
                     echo " id=\"current-page\"";
                 }?>>User</a></li>
                 <?php
-                    if(isset($_SESSION['authenticated'])) {
+                    if(isset($_SESSION['authenticated']) && $_SESSION['authenticated'])) {
                         echo "<li><a href=\"logout.php\">Logout</a></li>"; 
                     }
                 ?>
