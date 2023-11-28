@@ -121,7 +121,7 @@ elseif($flag == 1){ # error in validation
     $_SESSION['fname'] = $fname;
     $_SESSION['lname'] = $lname;
     $_SESSION['username'] = $username;
-    $_SESSION['username'] = $email;
+    $_SESSION['email'] = $email;
     header("Location: register.php");
     exit();
 }
