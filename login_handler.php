@@ -53,6 +53,7 @@ try {
         else {
             $logger->LogWarn("User [{$username}] invalid username or password");
             $_SESSION['authenticated'] = false;
+            $_SESSION['username'] = $username; //used to repopulate form
             $_SESSION['message'] = 'Invalid Username or Password';
             header("Location: login.php");
             exit();
@@ -60,6 +61,7 @@ try {
         // echo "after data showing";
     } else {
         $_SESSION['authenticated'] = false;
+        $_SESSION['username'] = $username; //used to repopulate form
         $_SESSION['message'] = 'Invalid Username or Password';
         header("Location: login.php");
         exit();

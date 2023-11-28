@@ -118,6 +118,10 @@ if($flag == 0){
 }
 elseif($flag == 1){ # error in validation
     $_SESSION['messages'] = $validation_errors;
+    $_SESSION['fname'] = $fname;
+    $_SESSION['lname'] = $lname;
+    $_SESSION['username'] = $username;
+    $_SESSION['username'] = $email;
     header("Location: register.php");
     exit();
 }
