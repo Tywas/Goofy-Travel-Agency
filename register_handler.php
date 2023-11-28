@@ -100,7 +100,8 @@ if($flag == 0){
         $stmt = $conn->prepare($query);
 
         // Securing password using password_hash
-        $secure_pass = password_hash($password, PASSWORD_BCRYPT);
+        $salt = "GTA";
+        $secure_pass = password_hash($password.$salt, PASSWORD_BCRYPT);
         
         $stmt->bindParam(":Fname", $fname);
         $stmt->bindParam(":Lname", $lname);

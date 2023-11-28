@@ -42,8 +42,8 @@ try {
             $db_user = $user['username'];
             $db_pwd = $user['pwd'];
         }
-
-        if (password_verify($password, $db_pwd)){
+        $salt = "GTA";
+        if (password_verify($password.$salt, $db_pwd)){
             $_SESSION['authenticated'] = true;
             $_SESSION['fname'] = $db_fname;
             $_SESSION['user_id'] = $db_userid;
