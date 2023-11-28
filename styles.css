@@ -273,22 +273,63 @@ ul {
     text-decoration: underline;
 }
 
+/* user page */
+.user_introduction {
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  text-shadow: 1px 2px 2px rgba(46,91,173,0.6);
+  color: rgb(218, 124, 0);
+  margin-bottom: 0px;
+}
+
+.user_intro_doc {
+  text-align: center;
+  margin-bottom: 75px;
+  text-shadow: .25px .5px .5px rgba(46,91,173,0.6);
+}
+
+.user_itineraries {
+  min-height: 25vw;
+  border:5px solid black;
+  background-color: #e4e4e4;
+  margin-bottom: 50px;
+}
+
+.user_itinerary{
+  float: left;
+  margin-left: 1vw;
+  margin-top: 1vw;
+  padding: .5vw 1vw;
+}
+
+.user_itinerary h3{
+  display: inline;
+  background-color: green;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: .1vw .3vw;
+  border:1px solid black;
+}
+
 /* Users map */
-svg {
+#world_map svg {
+  border:4px solid black;
+  border-top: 2px solid black;
   background-color: #00384f;
 }
-svg path {
+#world_map svg path {
   fill: #004f07;
   stroke: #eee;
   stroke-width: .25;
 }
-svg a:hover path{
+#world_map svg a:hover path{
   fill: #4fc199;
   transition: 0.6s;
   cursor: pointer;
 }
 
-svg path:hover{
+#world_map svg path:hover{
   fill: #4fc199;
   transition: 0.6s;
   cursor: pointer;
@@ -303,8 +344,10 @@ svg path:hover{
   font-weight: bold;
   font-size: 25px;
   text-decoration: underline;
+  border:4px solid black;
+  border-bottom: 2px solid black;
 }
-/* used for jquery */
+
 .hovertext {
   position: absolute;
   background-color: #cecece;

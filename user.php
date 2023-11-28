@@ -35,9 +35,10 @@ $thisPage="user";
 
 
     <section id="about">
-    <p>Welcome, <?php echo $_SESSION['fname']?> to your personalized user dashboard. Here, you can have your own account.</p>
-    <p>Your travel journey starts here. Explore your options and embark on exciting adventures with G.T.A.</p>
-
+    <p class="user_introduction">Welcome, <?php echo $_SESSION['fname']?>!</p>
+    <p class="user_intro_doc">This is your personalized dashboard. Here, you can manage your bookings, update your profile, and access exclusive offers and discounts.
+        Your travel journey starts here. Explore your options and embark on exciting adventures with G.T.A.
+    </p>
         <!-- Add content for the about page here -->
     </section>
     <div class="hovertext"></div>
@@ -49,8 +50,21 @@ $thisPage="user";
         <? include "World_Map.php" ?>
     </div>
 
+    <p class="startadventure" id="startadventure">
+        Adventure awaits you!
+    </p>
     <div class="user_itineraries">
-        content
+        <?php foreach($_SESSION['countries'] as $col_name => $string) {
+        echo '
+        <div class="user_itinerary"> 
+            <h3 class="itinerary_title">' . $string . '</h3>
+            <a href="delete_itinerary.php?id=' . $string . '" class="itinerary_link" id="puddle"> 
+                <h3 class="itinerary_title" id="delete"> X </h3>
+            </a>
+        </div>';
+        }
+        ?>
+
     </div>
 
     <footer>
